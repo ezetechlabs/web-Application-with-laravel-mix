@@ -1,8 +1,8 @@
-<nav class="navbar has-shadow" >
+<nav class="navbar has-shadow">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item is-paddingless brand-item" href="{{route('home')}}">
-        <img src="{{asset('images/devmarketer-logo.png')}}" alt="SteevRos logo">
+        <img src="{{asset('images/devmarketer-logo.png')}}" alt="TerezTech">
       </a>
 
       @if (Request::segment(1) == "manage")
@@ -46,7 +46,7 @@
                   <i class="fa fa-fw fa-bell m-r-5"></i>
                 </span>Notifications
               </a>
-              <a href="#" class="navbar-item">
+              <a href="{{route('manage.dashboard')}}" class="navbar-item">
                 <span class="icon">
                   <i class="fa fa-fw fa-cog m-r-5"></i>
                 </span>Manage

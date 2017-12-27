@@ -6,7 +6,7 @@
   <div class="column is-one-third is-offset-one-third m-t-100">
     <div class="card">
       <div class="card-content">
-        <h1 class="title">SteevRos | Login</h1>
+        <h1 class="title has-text-centered">T&eacuterezTech</h1>
 
         <form action="{{route('login')}}" method="POST" role="form">
           {{csrf_field()}}
@@ -22,7 +22,7 @@
               <p class="help is-danger">{{$errors->first('email')}}</p>
             @endif
           </div>
-          <div class="field">
+          <div class="field m-b-15">
             <label for="password" class="label">Password</label>
             <p class="control has-icons-left has-icons-right">
               <input class="input {{$errors->has('password') ? 'is-danger' : ''}}" type="password" name="password" id="password">
@@ -38,20 +38,11 @@
 
           <b-checkbox name="remember" class="m-t-20">Remember Me</b-checkbox>
 
-          <button class="button is-success is-outlined is-fullwidth m-t-30">Log In</button>
+          <button class="button is-primary is-outlined is-fullwidth m-t-30">Log In</button>
         </form>
       </div> <!-- end of .card-content -->
     </div> <!-- end of .card -->
     <h5 class="has-text-centered m-t-20"><a href="{{route('password.request')}}" class="is-muted">Forgot Your Password?</a></h5>
   </div>
 </div>
-
-@endsection
-
-@section('scripts')
-  <script>
-    var app = new Vue({
-      el: '#app'
-    });
-  </script>
 @endsection

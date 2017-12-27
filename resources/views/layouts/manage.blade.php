@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>TerezTech</title>
+    <title>Terez | Management</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -16,15 +16,16 @@
 </head>
 <body>
     @include('_include.nav')
-    <div id="app" style="background-color: whitesmoke;">        
+    @include('_include.main')
+    <div class="management-area" id="app" style="background-color: whitesmoke;">        
         @yield('content')
     </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/buefy.js') }}"></script>
-     @yield('scripts')
-     </script>
+    <script src="https://unpkg.com/buefy"></script>
+     <script src="{{ asset('js/app.js') }}"></script>
+     {{-- <script src="{{ asset('js/buefy.js') }}"></script> --}}
+    @yield('scripts')
 </body>
 </html>
