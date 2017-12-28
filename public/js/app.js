@@ -30316,8 +30316,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-
-        auto_password: true, console.log('Component mounted.');
+        console.log('Component mounted.');
     }
 });
 

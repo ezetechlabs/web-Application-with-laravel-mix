@@ -1,7 +1,7 @@
 @extends('layouts.manage')
 
 @section('content')
-  <div class="flex-container">
+  <div class="flex-container" id="app1">
     <div class="columns m-t-10">
       <div class="column">
         <h1 class="title">Create New User</h1>
@@ -30,7 +30,7 @@
             <label for="password" class="label">Password</label>
             <p class="control">
               <input type="text" class="input" name="password" id="password" v-if="!auto_password" placeholder="Manually give a password to this user">
-             <b-checkbox name="auto_generate" class="m-t-15" :checked="true" v-model="auto_password">Auto Generate Password</b-checkbox>
+              <b-checkbox name="auto_generate" class="m-t-15" v-model="auto_password">Auto Generate Password</b-checkbox>
             </p>
           </div>
         </div> <!-- end of .column -->
@@ -58,15 +58,12 @@
 
 @section('scripts')
   <script>
-Vue.use(Buefy.default)
-Vue.component(Buefy.Checkbox.name, Buefy.Checkbox)
-  var app = new Vue({
+ var app = new Vue({
       el: '#app',
       data: {
         auto_password: true,
+        rolesSelected: [{!! old('roles') ? old('roles') : '' !!}]
       }
-  
     });
-
   </script>
 @endsection

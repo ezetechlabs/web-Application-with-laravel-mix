@@ -8,7 +8,7 @@ Vue.use(Buefy);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-var App = new Vue({
+var app = new Vue({
    el: '#app',
    data: {}
 });
