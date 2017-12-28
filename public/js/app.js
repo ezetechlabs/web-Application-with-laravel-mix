@@ -1043,7 +1043,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
 Vue.component('example-component', __webpack_require__(37));
 
-var App = new Vue({
+var app = new Vue({
    el: '#app',
    data: {}
 });

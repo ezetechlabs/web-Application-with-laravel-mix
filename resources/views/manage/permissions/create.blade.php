@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <button class="button is-success">Create Permission</button>
+          <button class="button is-primary">Cr&eacuteer Permission</button>
         </form>
       </div>
     </div>
