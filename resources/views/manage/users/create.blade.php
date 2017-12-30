@@ -4,7 +4,7 @@
   <div class="flex-container" id="app1">
     <div class="columns m-t-10">
       <div class="column">
-        <h1 class="title">Create New User</h1>
+        <h1 class="title">Cr&eacuteer nouveau utilisateur !</h1>
       </div>
     </div>
     <hr class="m-t-0">
@@ -49,7 +49,7 @@
       <div class="columns">
         <div class="column">
           <hr />
-          <button class="button is-primary is-pulled-right" style="width: 250px;">Create New User</button>
+          <button class="button is-primary is-pulled-right" style="width: 250px;">Cr&eacuteer nouveau utilisateur</button>
         </div>
       </div>
     </form>

@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
     @yield('styles')
 </head>
 <body>
@@ -22,8 +23,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
     <script src="https://unpkg.com/buefy"></script>
      <script src="{{ asset('js/app.js') }}"></script>
      {{-- <script src="{{ asset('js/buefy.js') }}"></script> --}}
